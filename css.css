@@ -2,6 +2,7 @@
     box-sizing: border-box;
     font-family: Calibri, 'Trebuchet MS', sans-serif;
     text-decoration: none;
+    outline: none;
 }
 body {
     background-color: #FBFAFB;
@@ -11,11 +12,11 @@ body {
     color: #FE2E64;
 }
 .main{
-    position: fixed;
-    width: 100%;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%); 
+    /*position: fixed;*/
+    /*width: 100%;*/
+    margin-top: 40vh;
+    /*margin-left: 10%;*/
+    /*transform: translate(-50%, -50%);*/
 }
 .line {
     text-align: center;
@@ -24,11 +25,10 @@ body {
 .line1 {
     font-weight: bold;
 }
-a {
+.randomWiki {
     color: #FE2E64;
 }
 #search-bar {
-    outline: none;
     height: 2.5em;
     width: 50%;
     border: 3px solid;
@@ -39,26 +39,30 @@ a {
   /* Remove default */
   /*-webkit-appearance: none;*/
   /* Now your own custom styles */
-  background: #FE2E64;  
+  /*background: #FE2E64;*/
 }
-#search-btn {
+.search-cancel-btn {
     border: none;
     background-color: #FE2E64;
     color: white;
     font-weight: bold;
     font-size: 0.6em;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .line5 {
     margin: 0 auto;
     max-width: 600px;
 }
-.line5-1 {
-    width: 90%;
-    margin: 0 auto;
-    background-color: orange;
+.line5 div {
+    width: 85%;
+    border-left: 3px;
+    background-color: #FAFAFA;
+    margin: 1em auto 0 auto;
+    padding: 1em;
+    cursor: pointer;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    color: black;
 }
-.line5-2 {
-    width: 90%;
-    margin: 0 auto;
-    background-color: purple;
+.line5 div:hover {
+    border-left: 3px solid #FE2E64;
 }

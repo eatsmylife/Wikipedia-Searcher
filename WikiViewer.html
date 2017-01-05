@@ -17,13 +17,12 @@
     <div class="line2 line">Or Click Icon To Search</div>
     <div class="line3 line"><i class="fa fa-search fa-2x clickable" aria-hidden="true"></i></div>
     <div class="line4 line">
-      <input type="search" id="search-bar" placeholder="Search for something..">
+      <input type="search" id="search-bar" placeholder="Search for something.." onsearch="onSearch()">
       <br/>
-      <button class="clickable" id="search-btn">Search</button>
+      <button onclick="onSearch()" class="clickable search-cancel-btn" id="search-btn">Search</button>
+      <button onclick="onCancel()" class="clickable search-cancel-btn" id="cancel-btn">Cancel</button>
     </div>
     <div class="line5">
-      <div class="line5-1">wodota</div>
-      <div class="line5-2">top10</div>
     </div>
   </div>
 </body>
