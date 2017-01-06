@@ -5,14 +5,20 @@ $(document).ready(function () {
   $(".fa-search").click(function () {
     $(".line3").fadeOut(1, function () {
       $(".line4").fadeIn();
+      $("#search-bar").focus();
     });
-  }); 
+  });
 
 });
 
 function onCancel() {
-  $(".main").animate({
-    marginTop: "40vh"
+  $(".line5").fadeOut("fast", function () {
+    $(".main").animate({
+      marginTop: "40vh"
+    });
+    $(".line4").hide();
+    $(".line3").fadeIn();
+    document.getElementById("search-bar").value = "";
   });
 }
 
@@ -21,6 +27,7 @@ function onSearch() {
     marginTop: "10vh"
   });
   $(".line5").html("");
+  $(".line5").fadeIn("fast");
   var search = document.getElementById("search-bar").value;
   $.ajax({
     url: 'https://en.wikipedia.org/w/api.php?action=query&formatversion=2&generator=prefixsearch&gpslimit=10&prop=pageimages|pageterms&piprop=thumbnail&pithumbsize=50&pilimit=10&redirects=&wbptterms=description',

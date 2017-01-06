@@ -37,7 +37,7 @@ body {
 }
 #search-bar::-webkit-search-cancel-button {
   /* Remove default */
-  /*-webkit-appearance: none;*/
+  -webkit-appearance: none;
   /* Now your own custom styles */
   /*background: #FE2E64;*/
 }
